@@ -32,6 +32,7 @@ body {
   	*/
   grid-auto-rows: minmax(10px, auto); }
 
+/* grid column/row start and grid column/row end determine how much space everything will take up on your grid. */
 .header {
   background-color: rgba(255, 0, 255, 0.5);
   border: 2px solid #ff00ff;

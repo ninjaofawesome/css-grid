@@ -17,10 +17,10 @@
 
 		The grid-template-rows can work explicitly like the grid columns OR you may create grid rows as needed with the grid-auto-rows version.
 
-
+		You may set the rows to automatically expand in height with minmax.
 	*/
 	// grid-template-rows: repeat(12, 8.3vh);
-	grid-auto-rows: 8.3%;
+	grid-auto-rows: minmax(0, auto);
 
 }
 

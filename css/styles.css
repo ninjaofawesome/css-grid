@@ -28,9 +28,9 @@ body {
   
   		The grid-template-rows can work explicitly like the grid columns OR you may create grid rows as needed with the grid-auto-rows version.
   
-  
+  		You may set the rows to automatically expand in height with minmax.
   	*/
-  grid-auto-rows: 8.3%; }
+  grid-auto-rows: minmax(0, auto); }
 
 .header {
   background-color: rgba(255, 0, 255, 0.7);

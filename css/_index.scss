@@ -1,5 +1,10 @@
 .main {
 	display: grid;
+	/*
+		repeat: number of columns, width of columns.
+		For example, in here I wanted a 12 column grid that equalled 100% of the browser width.
+	*/
+	grid-template-columns: repeat(12, 8.3%);
 
 }
 

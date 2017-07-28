@@ -13,11 +13,24 @@ body {
 
 .main {
   display: grid;
-  /*
-  	repeat: number of columns, width of columns.
-  	For example, in here I wanted a 12 column grid that equalled 100% of the browser width.
-  */
-  grid-template-columns: repeat(12, 8.3%); }
+  	/*
+  		repeat: number of columns, width of columns.
+  		For example, in here I wanted a 12 column grid that equalled 100% of the browser width.
+  
+  		This can be used in conjunction with other columns, ex:
+  		 200px repeat(10, 10%) 200px;
+  
+  		 You may also use auto columns similar to the rows example shown below.
+  	*/
+  grid-template-columns: repeat(12, 8%);
+  	/*
+  		Rows may be added implicitly or explicitly.
+  
+  		The grid-template-rows can work explicitly like the grid columns OR you may create grid rows as needed with the grid-auto-rows version.
+  
+  
+  	*/
+  grid-auto-rows: 8.3%; }
 
 .header {
   background-color: rgba(255, 0, 255, 0.7);

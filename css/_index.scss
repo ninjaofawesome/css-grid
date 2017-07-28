@@ -3,8 +3,24 @@
 	/*
 		repeat: number of columns, width of columns.
 		For example, in here I wanted a 12 column grid that equalled 100% of the browser width.
+
+		This can be used in conjunction with other columns, ex:
+		 200px repeat(10, 10%) 200px;
+
+		 You may also use auto columns similar to the rows example shown below.
 	*/
-	grid-template-columns: repeat(12, 8.3%);
+	grid-template-columns: repeat(12, 8%);
+	// grid-auto-columns: 8.3%;
+
+	/*
+		Rows may be added implicitly or explicitly.
+
+		The grid-template-rows can work explicitly like the grid columns OR you may create grid rows as needed with the grid-auto-rows version.
+
+
+	*/
+	// grid-template-rows: repeat(12, 8.3vh);
+	grid-auto-rows: 8.3%;
 
 }
 

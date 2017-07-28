@@ -30,36 +30,52 @@ body {
   
   		You may set the rows to automatically expand in height with minmax.
   	*/
-  grid-auto-rows: minmax(0, auto); }
+  grid-auto-rows: minmax(10px, auto); }
 
 .header {
-  background-color: rgba(255, 0, 255, 0.7);
+  background-color: rgba(255, 0, 255, 0.5);
   border: 2px solid #ff00ff;
-  border-radius: 3px; }
+  border-radius: 3px;
+  grid-column-start: 1;
+  grid-column-end: 14;
+  grid-row-start: 1;
+  grid-row-end: 3; }
   .header__title {
     text-align: center;
     color: #fff; }
 
 .sidebar {
-  background-color: rgba(0, 255, 0, 0.7);
+  background-color: rgba(0, 255, 0, 0.5);
   border: 2px solid #00ff00;
-  border-radius: 3px; }
+  border-radius: 3px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 10; }
   .sidebar__title {
     text-align: center;
     color: #fff; }
 
 .body {
-  background-color: rgba(0, 255, 255, 0.7);
+  background-color: rgba(0, 255, 255, 0.5);
   border: 2px solid #00ffff;
-  border-radius: 3px; }
+  border-radius: 3px;
+  grid-column-start: 4;
+  grid-column-end: 14;
+  grid-row-start: 3;
+  grid-row-end: 10; }
   .body__title {
     text-align: center;
     color: #fff; }
 
 .footer {
-  background-color: rgba(255, 255, 0, 0.7);
-  border: 2px solid #ffff00;
-  border-radius: 3px; }
+  background-color: rgba(128, 0, 128, 0.5);
+  border: 2px solid #800080;
+  border-radius: 3px;
+  grid-column-start: 1;
+  grid-column-end: 14;
+  grid-row-start: 10;
+  grid-row-end: 13; }
   .footer__title {
     text-align: center;
     color: #fff; }

@@ -20,7 +20,7 @@
 		You may set the rows to automatically expand in height with minmax.
 	*/
 	// grid-template-rows: repeat(12, 8.3vh);
-	grid-auto-rows: minmax(0, auto);
+	grid-auto-rows: minmax(10px, auto);
 
 }
 
@@ -28,6 +28,11 @@
 	background-color: $pale-magenta;
 	border: 2px solid $magenta;
 	border-radius: 3px;
+	grid-column-start: 1;
+	grid-column-end: 14;
+	grid-row-start: 1;
+	grid-row-end: 3;
+
 	&__title {
 		text-align: center;
 		color: $white;
@@ -38,6 +43,10 @@
 	background-color: $pale-lime;
 	border: 2px solid $lime;
 	border-radius: 3px;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 3;
+	grid-row-end: 10;
 	&__title {
 		text-align: center;
 		color: $white;
@@ -49,6 +58,11 @@
 	background-color: $pale-cyan;
 	border: 2px solid $cyan;
 	border-radius: 3px;
+	grid-column-start: 4;
+	grid-column-end: 14;
+	grid-row-start: 3;
+	grid-row-end: 10;
+
 	&__title {
 		text-align: center;
 		color: $white;
@@ -56,9 +70,13 @@
 }
 
 .footer {
-	background-color: $pale-yellow;
-	border: 2px solid $yellow;
+	background-color: $pale-purple;
+	border: 2px solid $purple;
 	border-radius: 3px;
+	grid-column-start: 1;
+	grid-column-end: 14;
+	grid-row-start: 10;
+	grid-row-end: 13;
 	&__title {
 		text-align: center;
 		color: $white;

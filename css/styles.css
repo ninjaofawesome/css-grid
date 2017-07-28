@@ -30,7 +30,7 @@ body {
   
   		You may set the rows to automatically expand in height with minmax.
   	*/
-  grid-auto-rows: minmax(10px, auto);
+  grid-auto-rows: minmax(0, auto);
   	/*
   		if you want gutters, you may add them with grid-column-gap.
   		You may also choose to have gaps between rows with grid-row-gap.  Shorthand row and column is grid-gap.
@@ -149,5 +149,33 @@ the shorthand version looks like a fraction
       border-radius: 3px;
       grid-column: 1/13;
       grid-row: 10/13; } }
+
+.widget {
+  background-color: rgba(255, 255, 0, 0.5);
+  border: 2px solid #ffff00;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: minmax(0, auto); }
+  @media only screen and (min-width: 1025px) {
+    .widget {
+      background-color: rgba(128, 0, 128, 0.5);
+      border: 2px solid #800080; } }
+  .widget__image {
+    display: block;
+    margin: 5% auto;
+    padding: 0;
+    width: 200px;
+    grid-columns: 1/2; }
+    @media only screen and (min-width: 1025px) {
+      .widget__image {
+        grid-columns: 2/3; } }
+  .widget__headline {
+    text-align: center;
+    color: #800080;
+    grid-columns: 2/3; }
+    @media only screen and (min-width: 1025px) {
+      .widget__headline {
+        grid-columns: 1/2;
+        color: #fff; } }
 
 /*# sourceMappingURL=styles.css.map */

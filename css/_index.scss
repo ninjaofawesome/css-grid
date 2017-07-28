@@ -20,7 +20,7 @@
 		You may set the rows to automatically expand in height with minmax.
 	*/
 	// grid-template-rows: repeat(12, 8.3vh);
-	grid-auto-rows: minmax(10px, auto);
+	grid-auto-rows: minmax(0, auto);
 
 	/*
 		if you want gutters, you may add them with grid-column-gap.

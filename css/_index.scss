@@ -113,7 +113,7 @@ the shorthand version looks like a fraction
 	&__image {
 		display: block;
 		margin: 0 auto;
-		width: 200px;
+		width: 75%;
 	}
 
 	&__paragraph {
@@ -125,12 +125,6 @@ the shorthand version looks like a fraction
 		border: 2px solid $lime;
 		grid-column: 1/4;
 		grid-row-start: 3/10;
-
-		&__image {
-			display: block;
-			margin: 0 auto;
-			width: 400px;
-		}
 	}
 
 	@media only screen and (min-width: 1025px) {
@@ -139,12 +133,6 @@ the shorthand version looks like a fraction
 		border-radius: 3px;
 		grid-column: 4/13;
 		grid-row: 3/10;
-
-		&__image {
-			display: block;
-			margin: 0 auto;
-			width: 600px;
-		}
 	}
 }
 

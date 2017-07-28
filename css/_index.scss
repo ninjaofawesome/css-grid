@@ -115,9 +115,19 @@
 	grid-row-start: 6;
 	grid-row-end: 10;
 
-		&__title {
+	&__title {
 		text-align: center;
 		color: $white;
+	}
+
+	&__image {
+		display: block;
+		margin: 0 auto;
+		width: 200px;
+	}
+
+	&__paragraph {
+		padding: 0 5px;
 	}
 
 	@media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -127,6 +137,13 @@
 		grid-column-end: 4;
 		grid-row-start: 3;
 		grid-row-end: 10;
+
+		&__image {
+			display: block;
+			margin: 0 auto;
+			width: 400px;
+		}
+
 	}
 
 	@media only screen and (min-width: 1025px) {
@@ -137,6 +154,13 @@
 		grid-column-end: 14;
 		grid-row-start: 3;
 		grid-row-end: 10;
+
+		&__image {
+			display: block;
+			margin: 0 auto;
+			width: 600px;
+		}
+
 	}
 }
 

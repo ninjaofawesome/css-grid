@@ -109,6 +109,12 @@ body {
   .body__title {
     text-align: center;
     color: #fff; }
+  .body__image {
+    display: block;
+    margin: 0 auto;
+    width: 200px; }
+  .body__paragraph {
+    padding: 0 5px; }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .body {
       background-color: rgba(0, 255, 0, 0.5);
@@ -116,7 +122,11 @@ body {
       grid-column-start: 1;
       grid-column-end: 4;
       grid-row-start: 3;
-      grid-row-end: 10; } }
+      grid-row-end: 10; }
+      .body__image {
+        display: block;
+        margin: 0 auto;
+        width: 400px; } }
   @media only screen and (min-width: 1025px) {
     .body {
       background-color: rgba(0, 255, 255, 0.5);
@@ -125,7 +135,11 @@ body {
       grid-column-start: 4;
       grid-column-end: 14;
       grid-row-start: 3;
-      grid-row-end: 10; } }
+      grid-row-end: 10; }
+      .body__image {
+        display: block;
+        margin: 0 auto;
+        width: 600px; } }
 
 .footer {
   background-color: rgba(128, 0, 128, 0.5);

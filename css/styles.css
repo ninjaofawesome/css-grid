@@ -40,8 +40,9 @@ body {
 
 /* grid column/row start and grid column/row end determine how much space everything will take up on your grid. */
 .header {
-  background-color: rgba(255, 0, 255, 0.5);
-  border: 2px solid #ff00ff;
+  background-color: rgba(255, 255, 0, 0.5);
+  color: #000;
+  border: 2px solid #ffff00;
   border-radius: 3px;
   grid-column-start: 1;
   grid-column-end: 14;
@@ -50,41 +51,109 @@ body {
   .header__title {
     text-align: center;
     color: #fff; }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .header {
+      background-color: rgba(0, 255, 0, 0.5);
+      border: 2px solid #00ff00;
+      grid-column-start: 1;
+      grid-column-end: 13;
+      grid-row-start: 10;
+      grid-row-end: 13; } }
+  @media only screen and (min-width: 1025px) {
+    .header {
+      background-color: rgba(255, 0, 255, 0.5);
+      border: 2px solid #ff00ff;
+      border-radius: 3px;
+      grid-column-start: 1;
+      grid-column-end: 14;
+      grid-row-start: 1;
+      grid-row-end: 3; } }
 
 .sidebar {
   background-color: rgba(0, 255, 0, 0.5);
   border: 2px solid #00ff00;
   border-radius: 3px;
   grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-end: 13;
   grid-row-start: 3;
-  grid-row-end: 10; }
+  grid-row-end: 6; }
   .sidebar__title {
     text-align: center;
     color: #fff; }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .sidebar {
+      background-color: rgba(0, 255, 255, 0.5);
+      border: 2px solid #00ffff;
+      grid-column-start: 4;
+      grid-column-end: 13;
+      grid-row-start: 3;
+      grid-row-end: 10; } }
+  @media only screen and (min-width: 1025px) {
+    .sidebar {
+      background-color: rgba(0, 255, 0, 0.5);
+      border: 2px solid #00ff00;
+      border-radius: 3px;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 10; } }
 
 .body {
   background-color: rgba(0, 255, 255, 0.5);
   border: 2px solid #00ffff;
   border-radius: 3px;
-  grid-column-start: 4;
-  grid-column-end: 14;
-  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 6;
   grid-row-end: 10; }
   .body__title {
     text-align: center;
     color: #fff; }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .body {
+      background-color: rgba(0, 255, 0, 0.5);
+      border: 2px solid #00ff00;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 10; } }
+  @media only screen and (min-width: 1025px) {
+    .body {
+      background-color: rgba(0, 255, 255, 0.5);
+      border: 2px solid #00ffff;
+      border-radius: 3px;
+      grid-column-start: 4;
+      grid-column-end: 14;
+      grid-row-start: 3;
+      grid-row-end: 10; } }
 
 .footer {
   background-color: rgba(128, 0, 128, 0.5);
   border: 2px solid #800080;
   border-radius: 3px;
   grid-column-start: 1;
-  grid-column-end: 14;
+  grid-column-end: 13;
   grid-row-start: 10;
   grid-row-end: 13; }
   .footer__title {
     text-align: center;
     color: #fff; }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .footer {
+      background-color: rgba(255, 0, 255, 0.5);
+      border: 2px solid #ff00ff;
+      grid-column-start: 1;
+      grid-column-end: 13;
+      grid-row-start: 1;
+      grid-row-end: 3; } }
+  @media only screen and (min-width: 1025px) {
+    .footer {
+      background-color: rgba(128, 0, 128, 0.5);
+      border: 2px solid #800080;
+      border-radius: 3px;
+      grid-column-start: 1;
+      grid-column-end: 14;
+      grid-row-start: 10;
+      grid-row-end: 13; } }
 
 /*# sourceMappingURL=styles.css.map */

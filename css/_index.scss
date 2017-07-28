@@ -38,8 +38,9 @@
 /* grid column/row start and grid column/row end determine how much space everything will take up on your grid. */
 
 .header {
-	background-color: $pale-magenta;
-	border: 2px solid $magenta;
+	background-color: $pale-yellow;
+	color: $black;
+	border: 2px solid $yellow;
 	border-radius: 3px;
 	grid-column-start: 1;
 	grid-column-end: 14;
@@ -50,6 +51,25 @@
 		text-align: center;
 		color: $white;
 	}
+
+	@media only screen and (min-width: 768px) and (max-width: 1024px) {
+		background-color: $pale-lime;
+		border: 2px solid $lime;
+		grid-column-start: 1;
+		grid-column-end: 13;
+		grid-row-start: 10;
+		grid-row-end: 13;
+	}
+
+	@media only screen and (min-width: 1025px) {
+		background-color: $pale-magenta;
+		border: 2px solid $magenta;
+		border-radius: 3px;
+		grid-column-start: 1;
+		grid-column-end: 14;
+		grid-row-start: 1;
+		grid-row-end: 3;
+	}
 }
 
 .sidebar {
@@ -57,28 +77,66 @@
 	border: 2px solid $lime;
 	border-radius: 3px;
 	grid-column-start: 1;
-	grid-column-end: 4;
+	grid-column-end: 13;
 	grid-row-start: 3;
-	grid-row-end: 10;
+	grid-row-end: 6;
+
 	&__title {
 		text-align: center;
 		color: $white;
 	}
 
+	@media only screen and (min-width: 768px) and (max-width: 1024px) {
+		background-color: $pale-cyan;
+		border: 2px solid $cyan;
+		grid-column-start: 4;
+		grid-column-end: 13;
+		grid-row-start: 3;
+		grid-row-end: 10;
+	}
+
+	@media only screen and (min-width: 1025px) {
+		background-color: $pale-lime;
+		border: 2px solid $lime;
+		border-radius: 3px;
+		grid-column-start: 1;
+		grid-column-end: 4;
+		grid-row-start: 3;
+		grid-row-end: 10;
+	}
 }
 
 .body {
 	background-color: $pale-cyan;
 	border: 2px solid $cyan;
 	border-radius: 3px;
-	grid-column-start: 4;
-	grid-column-end: 14;
-	grid-row-start: 3;
+	grid-column-start: 1;
+	grid-column-end: 13;
+	grid-row-start: 6;
 	grid-row-end: 10;
 
-	&__title {
+		&__title {
 		text-align: center;
 		color: $white;
+	}
+
+	@media only screen and (min-width: 768px) and (max-width: 1024px) {
+		background-color: $pale-lime;
+		border: 2px solid $lime;
+		grid-column-start: 1;
+		grid-column-end: 4;
+		grid-row-start: 3;
+		grid-row-end: 10;
+	}
+
+	@media only screen and (min-width: 1025px) {
+		background-color: $pale-cyan;
+		border: 2px solid $cyan;
+		border-radius: 3px;
+		grid-column-start: 4;
+		grid-column-end: 14;
+		grid-row-start: 3;
+		grid-row-end: 10;
 	}
 }
 
@@ -87,12 +145,33 @@
 	border: 2px solid $purple;
 	border-radius: 3px;
 	grid-column-start: 1;
-	grid-column-end: 14;
+	grid-column-end: 13;
 	grid-row-start: 10;
 	grid-row-end: 13;
+
 	&__title {
 		text-align: center;
 		color: $white;
 	}
 
+	@media only screen and (min-width: 768px) and (max-width: 1024px) {
+		background-color: $pale-magenta;
+		border: 2px solid $magenta;
+		grid-column-start: 1;
+		grid-column-end: 13;
+		grid-row-start: 1;
+		grid-row-end: 3;
+	}
+
+	@media only screen and (min-width: 1025px) {
+		background-color: $pale-purple;
+		border: 2px solid $purple;
+		border-radius: 3px;
+		grid-column-start: 1;
+		grid-column-end: 14;
+		grid-row-start: 10;
+		grid-row-end: 13;
+	}
 }
+
+

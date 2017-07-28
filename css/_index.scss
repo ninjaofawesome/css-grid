@@ -1,0 +1,46 @@
+.main {
+	display: grid;
+
+}
+
+.header {
+	background-color: $pale-magenta;
+	border: 2px solid $magenta;
+	border-radius: 3px;
+	&__title {
+		text-align: center;
+		color: $white;
+	}
+}
+
+.sidebar {
+	background-color: $pale-lime;
+	border: 2px solid $lime;
+	border-radius: 3px;
+	&__title {
+		text-align: center;
+		color: $white;
+	}
+
+}
+
+.body {
+	background-color: $pale-cyan;
+	border: 2px solid $cyan;
+	border-radius: 3px;
+	&__title {
+		text-align: center;
+		color: $white;
+	}
+}
+
+.footer {
+	background-color: $pale-yellow;
+	border: 2px solid $yellow;
+	border-radius: 3px;
+	&__title {
+		text-align: center;
+		color: $white;
+	}
+
+}

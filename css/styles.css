@@ -22,7 +22,7 @@ body {
   
   		 You may also use auto columns similar to the rows example shown below.
   	*/
-  grid-template-columns: repeat(12, 8%);
+  grid-template-columns: repeat(12, 8.3%);
   	/*
   		Rows may be added implicitly or explicitly.
   
@@ -30,7 +30,13 @@ body {
   
   		You may set the rows to automatically expand in height with minmax.
   	*/
-  grid-auto-rows: minmax(10px, auto); }
+  grid-auto-rows: minmax(10px, auto);
+  	/*
+  		if you want gutters, you may add them with grid-column-gap.
+  		You may also choose to have gaps between rows with grid-row-gap.  Shorthand row and column is grid-gap.
+  
+  		If using the fr option on your columns and rows, these gutters will be accounted for before the columns are made.
+  	*/ }
 
 /* grid column/row start and grid column/row end determine how much space everything will take up on your grid. */
 .header {

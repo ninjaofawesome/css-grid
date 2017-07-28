@@ -9,7 +9,7 @@
 
 		 You may also use auto columns similar to the rows example shown below.
 	*/
-	grid-template-columns: repeat(12, 8%);
+	grid-template-columns: repeat(12, 8.3%);
 	// grid-auto-columns: 8.3%;
 
 	/*
@@ -21,6 +21,17 @@
 	*/
 	// grid-template-rows: repeat(12, 8.3vh);
 	grid-auto-rows: minmax(10px, auto);
+
+	/*
+		if you want gutters, you may add them with grid-column-gap.
+		You may also choose to have gaps between rows with grid-row-gap.  Shorthand row and column is grid-gap.
+
+		If using the fr option on your columns and rows, these gutters will be accounted for before the columns are made.
+	*/
+
+	// grid-column-gap: 10px;
+	// grid-row-gap: 10px;
+	// grid-gap: 10px;
 
 }
 

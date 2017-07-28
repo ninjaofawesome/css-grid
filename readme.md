@@ -10,4 +10,4 @@ Sure!  Clone it and go!
 
 ## Where can I see the finished result?
 
-That also is a WIP.  More to come.
+Here! [http://hereshannahs.info/css-grid/](http://hereshannahs.info/css-grid/)
